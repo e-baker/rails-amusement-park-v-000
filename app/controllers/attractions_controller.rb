@@ -22,6 +22,9 @@ class AttractionsController < ApplicationController
     @ride = Ride.new
   end
 
+  def edit
+  end
+
   private
     def set_attraction
       @attraction = Attraction.find(params[:id])
