@@ -1,0 +1,11 @@
+<%= content_tag :div, class: "theme-showcase" do  -%>
+  <%= content_tag :div, class: "left-pic" do  -%>
+    <img src="http://www.washingtonpost.com/wp-srv/special/health/why-roller-coasters-make-us-scream/images/rollercoasterBackground.jpg" width="550" height="325">
+  <% end # .left-pic -%>
+  <%= content_tag :div, class: "right-info" do  -%>
+    <h1>Welcome to the Amusement Park!</h1>
+    <%= content_tag :div, class: "center" do  -%>
+      <%= link_to "Sign in", signin_path %> | <%= link_to "Sign up", new_user_path %>
+    <% end # .center -%>
+  <% end # .right-info -%>
+<% end # .theme-showcase -%>
